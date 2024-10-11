@@ -6,10 +6,10 @@ const ruleSet = {
   spock: {beats: ["rock", "scissors"]}      
 }
 
-function rockPaperScissors(player1, player2) {
-  if(player1 === player2) {return "draw"};
+function rockPaperScissors(player1Choice, player2Choice) {
+  if(player1Choice === player2Choice) return "draw";
 
-  if(ruleSet[player1].beats.includes(player2)) {
+  if(ruleSet[player1Choice].beats.includes(player2Choice)) {
     return "player1";
   } else {
     return "player2";
